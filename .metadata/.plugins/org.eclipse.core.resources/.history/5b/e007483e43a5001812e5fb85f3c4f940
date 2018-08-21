@@ -1,0 +1,27 @@
+
+getdata();
+	function getdata(){
+	    var queryString = decodeURIComponent(window.location.search);
+	    queryString = queryString.substring(1);
+	    var queries = queryString.split("&");
+	    var searchList = queries[0].split("=");
+	    var search = searchList[1];
+	    var searchTypeList = queries[1].split("=");
+	    var searchType = searchTypeList[1];
+	    
+	    var requestURL = 'http://localhost:8080/jboss-javaee-ticketbook/example/web/find/'+search+'/'+searchType;
+	    var request = new XMLHttpRequest();
+	    
+	    request.open('GET', requestURL);
+	    request.responseType = 'json';
+	    request.send();
+	    request.onload = function () {
+	    var reply = request.response;
+//	    for (i in reply){
+//	    	var myH1 = document.createElement('h1');
+//	        myH1.textContent = reply[i];
+//	        document.getElementsByTagName('body')[0].appendChild(myH1);
+//	    }
+	}
+
+}

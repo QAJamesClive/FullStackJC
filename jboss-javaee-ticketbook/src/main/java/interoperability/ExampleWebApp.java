@@ -9,17 +9,40 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 
+import org.json.JSONObject;
+
+import code.JDBC;
+
 
 @Path("/web")
 public class ExampleWebApp {
 	
 	
+	
 	@GET
 	@Produces("Application/json")
-	@Path("/find/{id}")
-	public String findPerson(@PathParam("id") int id) {
+	@Path("/find/{search}/{searchType}")
+	public String findPerson(@PathParam("search") String search,@PathParam("searchType") String searchType) {
 		
-		return "{\"result\":\""+id +"\"}";
+		String Json = "";
+		String tempJson = "";
+		
+		JDBC JavaDataBaseConnection = new JDBC("jdbc:mysql://localhost/ticketbook_db", "root", "password");
+		JavaDataBaseConnection.Connect();
+		
+//		if(searchType == "all" || searchType == "bands") {
+//			tempJson = JavaDataBaseConnection.Read("bands_tbl", "name");
+//		}
+//		if(searchType == "all" || searchType == "venues") {
+//			tempJson = JavaDataBaseConnection.Read("venues_tbl", "name");
+//		}
+//		if(searchType == "all" || searchType == "events") {
+//			tempJson = JavaDataBaseConnection.Read("events_tbl", "name");
+//		}
+		
+		tempJson = JavaDataBaseConnection.Read("bands_tbl", "idBands_tbl,name");
+		return tempJson.toString();
+
 	}
 	
 	

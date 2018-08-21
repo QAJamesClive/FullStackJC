@@ -54,21 +54,21 @@ public class JDBCTest {
 		c.setPassword("password1");
 		Assertions.assertEquals(c.getPassword(),"password1","The database url set has failed");	
 	}
-	@Test
-	public void InsertTest() {
-		c.Connect();
-		c.Create("tbl_band", "bandName, bandDescription", "'A good band name','A good band description'");
-		JSONObject js = (JSONObject) c.Read("tbl_band", "bandName, bandDescription").get("2");
-		Assertions.assertEquals(TestJSon.get("bandName"),js.get("bandName"),"Reading/returning data from the database");	
-	}
-	@Test
-	public void UpdateTest() {
-		c.Connect();
-		c.Update("tbl_band", "bandName", "A exceptional band name", "bandIDPK", "2");
-		JSONObject js = (JSONObject) (c.Read("tbl_band", "bandName, bandDescription").get("1"));
-		System.out.print(js);
-		Assertions.assertEquals(TestUpdateJSon.get("bandName"),js.get("bandName"),"Update data in the database");
-	}
+//	@Test
+//	public void InsertTest() {
+//		c.Connect();
+//		c.Create("tbl_band", "bandName, bandDescription", "'A good band name','A good band description'");
+//		JSONObject js = (JSONObject) c.Read("tbl_band", "bandName, bandDescription");
+//		Assertions.assertEquals(TestJSon.get("bandName"),js.get("bandName"),"Reading/returning data from the database");	
+//	}
+//	@Test
+//	public void UpdateTest() {
+//		c.Connect();
+//		c.Update("tbl_band", "bandName", "A exceptional band name", "bandIDPK", "2");
+//		JSONObject js = (JSONObject) (c.Read("tbl_band", "bandName, bandDescription").get("1"));
+//		System.out.print(js);
+//		Assertions.assertEquals(TestUpdateJSon.get("bandName"),js.get("bandName"),"Update data in the database");
+//	}
 	@Test
 	public void DeleteTest() {
 		c.Connect();

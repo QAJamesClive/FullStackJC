@@ -21,6 +21,7 @@ public final class JDBC {
 		this.dB_URL = DB_URL;
 		this.username = Username;
 		this.password = Password;
+		
 	}
 
 	public String getdB_URL() {
@@ -58,6 +59,7 @@ public final class JDBC {
 		try {
 			conn = DriverManager.getConnection(dB_URL+"?useSSL=false", username, password);
 		} catch (SQLException e) {
+			e.printStackTrace();
 			System.out.println("Failed database connection creation");
 		}
 	}
@@ -76,7 +78,7 @@ public final class JDBC {
 		}
 	}
 	
-	public 	JSONObject Read(String table,String columnString) {
+	public String Read(String table,String columnString) {
 		
 		returnedList = new ArrayList<String>();
 		JSONObject returnedJSon = new JSONObject();
@@ -89,13 +91,13 @@ public final class JDBC {
 		} catch (SQLException e1) {
 
 		}
-		for ( int i = 0; i < columnString.length(); i++ ) {
+		for (int i = 0; i < columnString.length(); i++ ) {
 			if(columnString.charAt(i) == ',') {
 				columnCount++;
 			}
         }
 		columnCount++;
-		String sql= "SELECT "+columnString+" FROM "+table;
+		String sql= "SELECT ("+columnString+") FROM "+table;
 		ResultSet rs = null;
 		try {
 			rs = stmt.executeQuery(sql);
@@ -122,9 +124,9 @@ public final class JDBC {
 		} catch (SQLException e) {
 
 		}
-		return returnedJSon;
+		return returnedJSon.toString();
 	}
-	public 	JSONObject Read(String table,String columnString,String refColumn,String ref) {
+	public String Read(String table,String columnString,String refColumn,String ref) {
 		
 		returnedList = new ArrayList<String>();
 		JSONObject returnedJSon = new JSONObject();
@@ -170,7 +172,7 @@ public final class JDBC {
 		} catch (SQLException e) {
 
 		}
-		return returnedJSon;
+		return returnedJSon.toString();
 	}
 	
 public void Update(String table,String coulmn,String value,String refColumn,String ref) {
