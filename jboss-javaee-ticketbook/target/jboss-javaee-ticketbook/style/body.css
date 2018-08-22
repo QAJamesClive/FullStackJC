@@ -1,0 +1,13 @@
+main{
+    width:80%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right:10%;
+}
+h2{
+    padding-top: 2.5%;
+    border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: #0d0d0d;
+}

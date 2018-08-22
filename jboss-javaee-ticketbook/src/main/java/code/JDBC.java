@@ -82,7 +82,6 @@ public final class JDBC {
 		
 		returnedList = new ArrayList<String>();
 		JSONObject returnedJSon = new JSONObject();
-		int rowNumber = 0;
 		
 		int columnCount = 0;
 		
@@ -111,12 +110,9 @@ public final class JDBC {
 		}
 		try {
 			while(rs.next()) {
-				JSONObject rowJSon = new JSONObject();
 				for(int i = 0; i < columnCount;i++) {
-					rowJSon.put(rsmd.getColumnName(i+1), rs.getString(i+1));
-					rowNumber = rs.getRow();
+					returnedJSon.put(rsmd.getColumnName(i+1), rs.getString(i+1));
 				}
-				returnedJSon.put(Integer.toString(rowNumber), rowJSon);
 			}
 		} catch (SQLException e) {
 		}

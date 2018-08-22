@@ -27,7 +27,7 @@ public class ExampleWebApp {
 		String Json = "";
 		String tempJson = "";
 		
-		JDBC JavaDataBaseConnection = new JDBC("jdbc:mysql://localhost/ticketbook_db", "root", "password");
+		JDBC JavaDataBaseConnection = new JDBC("jdbc:mysql://localhost/db_ticketbook", "root", "password");
 		JavaDataBaseConnection.Connect();
 		
 //		if(searchType == "all" || searchType == "bands") {
@@ -40,7 +40,7 @@ public class ExampleWebApp {
 //			tempJson = JavaDataBaseConnection.Read("events_tbl", "name");
 //		}
 		
-		tempJson = JavaDataBaseConnection.Read("bands_tbl", "idBands_tbl,name");
+		tempJson = JavaDataBaseConnection.Read("tbl_band", "bandName");
 		return tempJson.toString();
 
 	}

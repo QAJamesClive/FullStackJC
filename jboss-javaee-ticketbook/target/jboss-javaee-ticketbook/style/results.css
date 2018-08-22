@@ -1,0 +1,10 @@
+#leftSection{
+    width :30%;
+    display:inline-block;
+    vertical-align: top;
+}
+#rightSection{
+    width:60%;
+    display:inline-block;
+    vertical-align: top
+}
