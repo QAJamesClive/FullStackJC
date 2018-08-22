@@ -3,6 +3,7 @@ package code;
 import java.sql.*;
 import java.util.ArrayList;
 
+import org.json.JSONArray;
 import org.json.JSONML;
 import org.json.JSONObject;
 
@@ -81,7 +82,7 @@ public final class JDBC {
 	public String Read(String table,String columnString) {
 		
 		returnedList = new ArrayList<String>();
-		JSONObject returnedJSon = new JSONObject();
+		JSONArray returnedJSon = new JSONArray();
 		
 		int columnCount = 0;
 		
@@ -107,12 +108,15 @@ public final class JDBC {
 		try {
 			rsmd = rs.getMetaData();
 		} catch (SQLException e1) {
+			e1.printStackTrace();
 		}
 		try {
 			while(rs.next()) {
+				JSONObject rowJSon = new JSONObject();
 				for(int i = 0; i < columnCount;i++) {
-					returnedJSon.put(rsmd.getColumnName(i+1), rs.getString(i+1));
+					rowJSon.put(rsmd.getColumnName(i+1), rs.getString(i+1));
 				}
+				returnedJSon.put(rowJSon);
 			}
 		} catch (SQLException e) {
 		}

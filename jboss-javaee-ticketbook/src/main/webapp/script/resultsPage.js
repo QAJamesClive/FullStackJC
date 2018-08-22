@@ -17,11 +17,31 @@ getdata();
 	    request.send();
 	    request.onload = function () {
 	    var reply = request.response;
-	    for (i in reply){
-	    	var myH1 = document.createElement('h1');
-	        myH1.textContent = reply[i];
-	        document.getElementsByTagName('body')[0].appendChild(myH1);
-	    }
+		if(searchType == "All"){
+			for (i in reply){
+				replyI = reply[i];
+				for(j in replyI){
+					replyJ = replyI[j];
+					for(k in replyJ){
+						var result = document.createElement('div');
+						result.id = "searchResult";
+						result.textContent = replyJ[k];
+						document.getElementById('searchResults').appendChild(result);
+					}
+				}
+			}
+		}else{
+			for (i in reply){
+				replyI = reply[i];
+				for(j in replyI){
+					var result = document.createElement('div');
+					result.id = "searchResult";
+					result.textContent = replyI[j];
+					document.getElementById('searchResults').appendChild(result);
+				}
+			}
+		}
+
 	}
 
 }

@@ -22,7 +22,7 @@ public class ExampleWebApp {
 	@GET
 	@Produces("Application/json")
 	@Path("/find/{search}/{searchType}")
-	public String findPerson(@PathParam("search") String search,@PathParam("searchType") String searchType) {
+	public String findThing(@PathParam("search") String search,@PathParam("searchType") String searchType) {
 		
 		String Json = "";
 		String tempJson = "";
@@ -30,20 +30,22 @@ public class ExampleWebApp {
 		JDBC JavaDataBaseConnection = new JDBC("jdbc:mysql://localhost/db_ticketbook", "root", "password");
 		JavaDataBaseConnection.Connect();
 		
-//		if(searchType == "all" || searchType == "bands") {
-//			tempJson = JavaDataBaseConnection.Read("bands_tbl", "name");
-//		}
-//		if(searchType == "all" || searchType == "venues") {
-//			tempJson = JavaDataBaseConnection.Read("venues_tbl", "name");
-//		}
-//		if(searchType == "all" || searchType == "events") {
-//			tempJson = JavaDataBaseConnection.Read("events_tbl", "name");
-//		}
+		if(searchType.equals("Bands")) {
+			tempJson = JavaDataBaseConnection.Read("tbl_band", "bandName");
+		}
+		else if(searchType.equals("Venues")) {
+			tempJson = JavaDataBaseConnection.Read("tbl_venue", "venueName");
+		}
+		else if(searchType.equals("Events")) {
+			tempJson = JavaDataBaseConnection.Read("tbl_event", "eventName");
+		}
+		else{
+			tempJson = "["+JavaDataBaseConnection.Read("tbl_event", "eventName")+","+JavaDataBaseConnection.Read("tbl_venue", "venueName")+","+JavaDataBaseConnection.Read("tbl_band", "bandName")+"]";
+		}
 		
-		tempJson = JavaDataBaseConnection.Read("tbl_band", "bandName");
 		return tempJson.toString();
 
-	}
+}
 	
 	
 	/*

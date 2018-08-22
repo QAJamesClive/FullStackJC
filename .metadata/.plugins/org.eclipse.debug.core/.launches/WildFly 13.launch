@@ -15,5 +15,5 @@
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-mp &quot;C:\Users\Admin\InstallLocation\wildfly-13.0.0.Final\modules&quot; org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\Admin\InstallLocation\wildfly-13.0.0.Final\standalone "/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="&quot;-Dprogram.name=JBossTools: WildFly 13&quot; -server -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true &quot;-Dorg.jboss.boot.log.file=C:\Users\Admin\InstallLocation\wildfly-13.0.0.Final\standalone\log\boot.log&quot; &quot;-Dlogging.configuration=file:C:\Users\Admin\InstallLocation\wildfly-13.0.0.Final\standalone\configuration\logging.properties&quot; &quot;-Djboss.home.dir=C:\Users\Admin\InstallLocation\wildfly-13.0.0.Final&quot; -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost "/>
 <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:/Users/Admin/InstallLocation/wildfly-13.0.0.Final/bin"/>
-<stringAttribute key="server-id" value="WildFly 131534784525074"/>
+<stringAttribute key="server-id" value="WildFly 131534944797465"/>
 </launchConfiguration>
