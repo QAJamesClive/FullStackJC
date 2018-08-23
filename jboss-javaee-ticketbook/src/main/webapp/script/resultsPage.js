@@ -16,7 +16,8 @@ getdata();
 	    request.responseType = 'json';
 	    request.send();
 	    request.onload = function () {
-	    var reply = request.response;
+		var reply = request.response;
+		console.log(reply);
 		if(searchType == "All"){
 			for (i in reply){
 				replyI = reply[i];

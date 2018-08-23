@@ -24,7 +24,6 @@ public class ExampleWebApp {
 	@Path("/find/{search}/{searchType}")
 	public String findThing(@PathParam("search") String search,@PathParam("searchType") String searchType) {
 		
-		String Json = "";
 		String tempJson = "";
 		
 		JDBC JavaDataBaseConnection = new JDBC("jdbc:mysql://localhost/db_ticketbook", "root", "password");
@@ -44,6 +43,33 @@ public class ExampleWebApp {
 		}
 		
 		return tempJson.toString();
+
+}
+	
+	@GET
+	@Produces("Application/json")
+	@Path("/login/{username}/{password}")
+	public String login(@PathParam("username") String username,@PathParam("password") String password) {
+		
+//		String tempJson = "";
+//		
+//		JDBC JavaDataBaseConnection = new JDBC("jdbc:mysql://localhost/db_ticketbook", "root", "password");
+//		JavaDataBaseConnection.Connect();
+//		
+//		
+//		tempJson = "["+JavaDataBaseConnection.Read("tbl_person", "personUserName,personPassword")+"]";
+//		
+//		return tempJson.toString();
+		
+		String tempJson = "";
+		
+		JDBC JavaDataBaseConnection = new JDBC("jdbc:mysql://localhost/db_ticketbook", "root", "password");
+		JavaDataBaseConnection.Connect();
+		
+		tempJson = "["+JavaDataBaseConnection.Read("tbl_event", "eventName,eventDescription")+"]";
+		
+		return tempJson.toString();
+		
 
 }
 	

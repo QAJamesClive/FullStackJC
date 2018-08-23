@@ -1,5 +1,10 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style/footer.css">
+        <link rel="stylesheet" href="style/body.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/header.css">
     </head>
     <body>
         <header>
@@ -24,10 +29,11 @@
                     <img src="img/up.png" onclick="hideSection('user')" id = "userHide">
                     <img src="img/down.png" onclick="showSection('user')" id = "userShow">  
                     <div id ="userContent">
-                        <div id = "Item">
-                        <h2>User Content</h2>
-                        <img src="img/gig.jpeg">
-                    </div>
+                        <div id ="userContent">
+                            <input type="text" class ="credentials" id="loginUsername" placeholder="Username">
+                            <input type="text" class ="credentials" id="loginPassword" placeholder="Password">
+                            <button onclick="login()" class ="credentials" id="loginBtn">Login</button>
+                        </div>     
                     </div>      
                 </div>
             </div>
@@ -37,6 +43,7 @@
                     <img src="img/up.png" onclick="hideSection('highlight')" id = "highlightHide">
                     <img src="img/down.png" onclick="showSection('highlight')" id = "highlightShow">        
                     <div id = "highlightContent">
+
                     </div>
                 </div>
             </div>
@@ -59,9 +66,5 @@
     </body>
     <script src="script/highlight.js"></script>
     <script src="script/search.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/body.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/header.css">
+    <script src="script/login.js"></script>
 </html>

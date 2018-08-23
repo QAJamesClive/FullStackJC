@@ -3,7 +3,7 @@ FLUSH PRIVILEGES;
 create user if not exists 'user'@'%' Identified by 'password';
 GRANT insert, update on *.* to 'user'@'%' identified by 'password';
 FLUSH PRIVILEGES;
-/*drop database db_ticketbook;*/
+drop database if exists db_ticketbook;
 create database if not exists db_ticketBook;
 use db_ticketBook;
 /*drop table tbl_event;*/
@@ -14,12 +14,14 @@ create table if not exists tbl_venue(
     addressLine1 varchar(30) not null,
 	addressLine2 varchar(30)not null,
 	city varchar(30) not null,
-	postCode varchar(8) not null,
+	postcode varchar(8) not null,
     capacity int not null
 );
 create table if not exists tbl_event(
 	eventIDPK int not null auto_increment primary key,
-    eventStartDate date not null,
+    eventName varchar(30),
+	eventDescription varchar(30),
+    eventStartDate datetime not null,
 	eventPrice int not null,
 	ticketsSold int,
     venueIDFK int not null,
@@ -38,7 +40,7 @@ create table if not exists tbl_person(
     personLastName varchar(15),
     personDateOfBirth date not null,
     personAdmin boolean not null,
-    personUSername char(16) not null,
+    personUsername char(16) not null,
     personPassword char(16) not null
 );
 create table if not exists tbl_bandMember(
@@ -93,3 +95,24 @@ create table if not exists tbl_musicians(
 	foreign key(personIDFK)references tbl_person(personIDPK),
     primary key (bandIDFK, personIDFK)
 );
+
+
+Insert into tbl_band(bandName, bandDescription) values("A good band name","A good band description");
+Insert into tbl_band(bandName, bandDescription) values("A band name","A band description");
+Insert into tbl_band(bandName, bandDescription) values("A good bandito name","A good bandito description");
+Insert into tbl_band(bandName, bandDescription) values("The killers","A goodish band");
+
+
+Insert into tbl_Venue(venueName,addressLine1,addressLine2,city,postcode,capacity) values("club1","street","town","city","WS14 NE",2);
+Insert into tbl_Venue(venueName,addressLine1,addressLine2,city,postcode,capacity) values("club2","street","town","city","WS14 NE",5);
+Insert into tbl_Venue(venueName,addressLine1,addressLine2,city,postcode,capacity) values("club3","street","town","city","WS14 NE",1);
+Insert into tbl_Venue(venueName,addressLine1,addressLine2,city,postcode,capacity) values("club4","street","town","city","WS14 NE",1);
+
+
+Insert into tbl_event(eventName, eventDescription, eventStartDate, eventPrice, venueIDFK) values("Dirty mondays","A goodish band","2018-08-22 20:30:00",3000,1);
+Insert into tbl_event(eventName, eventDescription, eventStartDate,eventPrice, venueIDFK) values("Potato party","A goodish band","2018-08-22 20:30:00",4000,1);
+Insert into tbl_event(eventName, eventDescription, eventStartDate,eventPrice, venueIDFK) values("Sugar ray dance","A goodish band","2018-08-22 20:30:00",2000,2);
+Insert into tbl_event(eventName, eventDescription, eventStartDate,eventPrice, venueIDFK) values("Fleebus","A goodish band","2018-08-22 20:30:00",1000,2);
+
+Insert into tbl_person(personFirstName,personLastName,personDateOfBirth,personAdmin,personUserName,personPassword) values("First","Last",07/05/1994,true,"Username","password");
+Insert into tbl_person(personFirstName,personLastName,personDateOfBirth,personAdmin,personUserName,personPassword) values("James","Clive",07/05/1994,true,"JClive94","password");

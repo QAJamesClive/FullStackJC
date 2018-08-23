@@ -65,6 +65,17 @@ public final class JDBC {
 		}
 	}
 	
+	public void Disconnect() {
+		try {
+			if(conn!=null && !conn.isClosed()) {
+				conn.close();
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+			System.out.println("Failed to close the database connection");
+		}
+	}
+	
 	public void Create(String table, String columnList, String valuesList) {
 		
 		try {

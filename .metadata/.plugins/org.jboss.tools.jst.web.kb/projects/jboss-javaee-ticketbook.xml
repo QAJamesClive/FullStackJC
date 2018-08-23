@@ -4,98 +4,47 @@
  <used-by-projects/>
  <paths>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-3/shrinkwrap-descriptors-spi-2.0.0-alpha-3.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/protocol/arquillian-protocol-servlet/1.1.2.Final-wildfly-1/arquillian-protocol-servlet-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
   <path value="C:/Users/Admin/.m2/repository/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.1.2.Final-wildfly-1/arquillian-core-spi-1.1.2.Final-wildfly-1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/spec/javax/faces/jboss-jsf-api_2.2_spec/2.2.8/jboss-jsf-api_2.2_spec-2.2.8.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/hibernate/hibernate-jpamodelgen/4.3.5.Final/hibernate-jpamodelgen-4.3.5.Final.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar"/>
+  <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.1.2.Final-wildfly-1/arquillian-core-spi-1.1.2.Final-wildfly-1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/2.19.1/maven-surefire-plugin-2.19.1.jar"/>
+  <path value="C:/Users/Admin/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.1.2.Final-wildfly-1/arquillian-container-test-spi-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar"/>
   <path value="C:/Users/Admin/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/mysql/mysql-connector-java/8.0.12/mysql-connector-java-8.0.12.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/json/json/20180130/json-20180130.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-core/1.1.2.Final-wildfly-1/arquillian-junit-core-1.1.2.Final-wildfly-1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/hibernate/hibernate-validator-annotation-processor/5.1.3.Final/hibernate-validator-annotation-processor-5.1.3.Final.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.1.2/shrinkwrap-api-1.1.2.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/container/arquillian-container-impl-base/1.1.2.Final-wildfly-1/arquillian-container-impl-base-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/spec/javax/ejb/jboss-ejb-api_3.2_spec/1.0.0.Final/jboss-ejb-api_3.2_spec-1.0.0.Final.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar"/>
+  <path value="C:/Users/Admin/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/javax/enterprise/cdi-api/1.2/cdi-api-1.2.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.1.2/shrinkwrap-spi-1.1.2.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/core/arquillian-core-impl-base/1.1.2.Final-wildfly-1/arquillian-core-impl-base-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar"/>
+  <path value="C:/Users/Admin/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/config/arquillian-config-impl-base/1.1.2.Final-wildfly-1/arquillian-config-impl-base-1.1.2.Final-wildfly-1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-container/1.1.2.Final-wildfly-1/arquillian-junit-container-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-3/shrinkwrap-descriptors-api-base-2.0.0-alpha-3.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/container/arquillian-container-spi/1.1.2.Final-wildfly-1/arquillian-container-spi-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/com/google/protobuf/protobuf-java/2.6.0/protobuf-java-2.6.0.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.1.2.Final-wildfly-1/arquillian-container-test-impl-base-1.1.2.Final-wildfly-1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/test/arquillian-test-impl-base/1.1.2.Final-wildfly-1/arquillian-test-impl-base-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/resteasy/jaxrs-api/3.0.10.Final/jaxrs-api-3.0.10.Final.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.1.2/shrinkwrap-impl-base-1.1.2.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/core/arquillian-core-api/1.1.2.Final-wildfly-1/arquillian-core-api-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.0/junit-jupiter-engine-5.1.0.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/surefire/maven-surefire-common/2.19.1/maven-surefire-common-2.19.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.1.2.Final-wildfly-1/arquillian-config-api-1.1.2.Final-wildfly-1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.1.2.Final-wildfly-1/arquillian-test-spi-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/test/arquillian-test-api/1.1.2.Final-wildfly-1/arquillian-test-api-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.2_spec/1.0.0.Final/jboss-annotations-api_1.2_spec-1.0.0.Final.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/junit/platform/junit-platform-surefire-provider/1.1.0/junit-platform-surefire-provider-1.1.0.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.0/junit-jupiter-api-5.1.0.jar"/>
   <path value="C:/Users/Admin/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-api/1.1.2.Final-wildfly-1/arquillian-container-test-api-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/junit/junit/4.11/junit-4.11.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar"/>
   <path value="/jboss-javaee-ticketbook/src/main/webapp/WEB-INF/faces-config.xml">
    <libraries>
     <library class="faces-config">
@@ -104,8 +53,6 @@
     </library>
    </libraries>
   </path>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.jar"/>
-  <path value="C:/Users/Admin/.m2/repository/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.jar"/>
  </paths>
  <validation>
   <core validator-id="jsf-verification"/>
@@ -116,10 +63,10 @@
    <linked-el length="20" name="%0" offset="4104" path="%2"/>
    <linked-el length="20" name="%0" offset="3795" path="%1"/>
    <linked-el length="20" name="%0" offset="3795" path="%2"/>
-   <linked-el length="21" name="%3" offset="9447" path="%1"/>
-   <linked-el length="21" name="%3" offset="9447" path="%2"/>
-   <linked-el length="21" name="%4" offset="9447" path="%1"/>
-   <linked-el length="21" name="%4" offset="9447" path="%2"/>
+   <linked-el length="21" name="%3" offset="9037" path="%2"/>
+   <linked-el length="21" name="%3" offset="9037" path="%1"/>
+   <linked-el length="21" name="%4" offset="9037" path="%2"/>
+   <linked-el length="21" name="%4" offset="9037" path="%1"/>
    <linked-el length="171" name="%5" offset="30047" path="%6"/>
    <linked-el length="174" name="%5" offset="22245" path="%6"/>
    <linked-el length="181" name="%5" offset="32363" path="%6"/>
@@ -183,39 +130,39 @@
    <linked-el length="177" name="%5" offset="12894" path="%6"/>
    <linked-el length="174" name="%5" offset="22622" path="%6"/>
    <linked-el length="20" name="%7" offset="4104" path="%1"/>
-   <linked-el length="21" name="%7" offset="9607" path="%1"/>
    <linked-el length="20" name="%7" offset="4104" path="%2"/>
-   <linked-el length="21" name="%7" offset="9607" path="%2"/>
-   <linked-el length="21" name="%7" offset="13214" path="%2"/>
-   <linked-el length="31" name="%7" offset="10205" path="%2"/>
-   <linked-el length="21" name="%7" offset="13214" path="%1"/>
-   <linked-el length="31" name="%7" offset="10205" path="%1"/>
-   <linked-el length="26" name="%7" offset="10975" path="%1"/>
-   <linked-el length="26" name="%7" offset="10975" path="%2"/>
+   <linked-el length="21" name="%7" offset="9197" path="%2"/>
+   <linked-el length="21" name="%7" offset="9197" path="%1"/>
+   <linked-el length="21" name="%7" offset="12804" path="%1"/>
    <linked-el length="20" name="%7" offset="3795" path="%1"/>
+   <linked-el length="31" name="%7" offset="9795" path="%1"/>
+   <linked-el length="26" name="%7" offset="10565" path="%2"/>
+   <linked-el length="21" name="%7" offset="12804" path="%2"/>
+   <linked-el length="26" name="%7" offset="10565" path="%1"/>
    <linked-el length="20" name="%7" offset="3795" path="%2"/>
-   <linked-el length="31" name="%8" offset="10205" path="%2"/>
-   <linked-el length="31" name="%8" offset="10205" path="%1"/>
-   <linked-el length="31" name="%9" offset="10205" path="%2"/>
-   <linked-el length="31" name="%9" offset="10205" path="%1"/>
-   <linked-el length="21" name="%10" offset="9607" path="%1"/>
-   <linked-el length="21" name="%10" offset="9607" path="%2"/>
-   <linked-el length="21" name="%10" offset="13214" path="%2"/>
-   <linked-el length="21" name="%10" offset="13214" path="%1"/>
-   <linked-el length="31" name="%11" offset="10205" path="%2"/>
-   <linked-el length="31" name="%11" offset="10205" path="%1"/>
-   <linked-el length="26" name="%12" offset="10975" path="%1"/>
-   <linked-el length="26" name="%12" offset="10975" path="%2"/>
+   <linked-el length="31" name="%7" offset="9795" path="%2"/>
+   <linked-el length="31" name="%8" offset="9795" path="%1"/>
+   <linked-el length="31" name="%8" offset="9795" path="%2"/>
+   <linked-el length="31" name="%9" offset="9795" path="%1"/>
+   <linked-el length="31" name="%9" offset="9795" path="%2"/>
+   <linked-el length="21" name="%10" offset="9197" path="%2"/>
+   <linked-el length="21" name="%10" offset="9197" path="%1"/>
+   <linked-el length="21" name="%10" offset="12804" path="%1"/>
+   <linked-el length="21" name="%10" offset="12804" path="%2"/>
+   <linked-el length="31" name="%11" offset="9795" path="%1"/>
+   <linked-el length="31" name="%11" offset="9795" path="%2"/>
+   <linked-el length="26" name="%12" offset="10565" path="%2"/>
+   <linked-el length="26" name="%12" offset="10565" path="%1"/>
    <linked-el length="20" name="%13" offset="4104" path="%1"/>
    <linked-el length="20" name="%13" offset="4104" path="%2"/>
    <linked-el length="20" name="%13" offset="3795" path="%1"/>
    <linked-el length="20" name="%13" offset="3795" path="%2"/>
-   <linked-el length="21" name="%14" offset="9607" path="%1"/>
-   <linked-el length="21" name="%14" offset="9607" path="%2"/>
-   <linked-el length="21" name="%14" offset="13214" path="%2"/>
-   <linked-el length="21" name="%14" offset="13214" path="%1"/>
-   <linked-el length="26" name="%15" offset="10975" path="%1"/>
-   <linked-el length="26" name="%15" offset="10975" path="%2"/>
+   <linked-el length="21" name="%14" offset="9197" path="%2"/>
+   <linked-el length="21" name="%14" offset="9197" path="%1"/>
+   <linked-el length="21" name="%14" offset="12804" path="%1"/>
+   <linked-el length="21" name="%14" offset="12804" path="%2"/>
+   <linked-el length="26" name="%15" offset="10565" path="%2"/>
+   <linked-el length="26" name="%15" offset="10565" path="%1"/>
   </el>
  </validation>
  <aliases>
