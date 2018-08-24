@@ -1,0 +1,28 @@
+#Section{
+    padding-left:5%;
+    padding-right:5%;
+    text-align: center;
+}
+#Item{
+    padding-left:10%;
+    padding-right:10%;
+}
+#Item:hover{
+    opacity:0.5;
+    cursor: pointer;
+}
+#Item img{ 
+    width: 80%;
+}
+#highlightHide,#userHide{
+    width:5%;
+}
+#highlightHide:hover, #highlightShow:hover,#userHide:hover,#userShow:hover{
+    opacity:0.5;
+    cursor: pointer;
+}
+#highlightShow,#userShow{
+    width:5%;
+    display: none;
+}
+

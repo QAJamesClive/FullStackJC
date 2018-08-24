@@ -1,0 +1,29 @@
+#leftSection{
+    width :30%;
+    display:inline-block;
+    vertical-align: top;
+}
+#rightSection{
+    width:60%;
+    display:inline-block;
+    vertical-align: top
+}
+#searchResults{
+    margin-top: 10%;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+#searchResult{
+    margin-top: 5%;
+    width:100%;
+    display: block;
+    text-align:left;
+}
+#searchOptions{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10%;
+    width:80%;
+}
