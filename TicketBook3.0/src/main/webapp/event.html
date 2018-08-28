@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style/footer.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/results.css">
+    </head>
+    <body>
+        <header>
+            <div id = "search">
+                <div class="dropdown">
+                    <button onclick="dropdown()" id ="dropbtn" class ="dropbtn">All <i class="fa fa-angle-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a onclick="setFilter('Bands')">Bands</a>
+                        <a onclick="setFilter('Venues')">Venues</a>
+                        <a onclick="setFilter('Events')">Events</a>
+                        <a onclick="setFilter('All')">All</a>
+                    </div>
+                </div>
+                <input type="text" id="searchTerm" placeholder="Search">
+                <button onclick="search('results')"id="searchBtn" class="fa fa-search"></button>
+            </div>
+        </header>
+        <main>
+            <div id = leftSection>
+                <div id = "Section">
+	            <div id ="userSection">
+	                <div id="profile">
+	                    <h1>Sign-in</h1>
+	                    <img src="img/up.png" onclick="hideSection('user')" id = "userHide">
+	                    <img src="img/down.png" onclick="showSection('user')" id = "userShow">  
+	                    <div id ="userContent">
+	                        <div id ="login">
+	                            <input type="text" class ="credentials" id="loginUsername" name="loginUsername" placeholder="Username">
+	                            <input type="text" class ="credentials" id="loginPassword" name="loginPassword" placeholder="Password">
+	                            <button class ="credentials" onclick="login()" id="loginBtn"><i class="fa fa-sign-in"></i></button>
+	                            <button class ="credentials" onclick="displayRegister()" id="registerbtn"><i class="fa fa-user-plus"></i></button>
+	                        </div>  
+                     		<div id ="register">
+		            			<input type="text" class ="inputCredentials" id="firstNameInput" name="firstNameInput" placeholder="First name">
+			                    <input type="text" class ="inputCredentials" id="lastNameInput" name="lastNameInput" placeholder="Last name">
+			                    <input type="text" class ="inputCredentials" id="usernameInput" name="usernameInput" placeholder="Username">
+		                    	<input type="text" class ="inputCredentials" id="passwordInput" name="passwordInput" placeholder="Password">
+		                    	<button class ="inputCredentials" onclick="addUser()" id="submitbtn"><i class="fa fa-user-plus"></i></button>
+		                    	<button class ="inputCredentials" onclick="cancelAddUser()" id="cancelAddUserbtn"><i class="fa fa-times"></i></button>
+		                    	<div id ="errorMessage">
+		                    	</div>
+		            		</div>    
+	                    </div>     
+	                </div>
+	            </div>
+            	<div id = "logout">
+            		<div  id = "usernameText"></div>
+            		 <button onclick="logout()" id ="logoutbtn" class="fa fa-sign-out"></button>
+            	</div>
+            </div>
+                <div id = "Section">
+                    <div id =highlights>
+                        <h1>Highlights</h1>
+                        <img src="img/up.png" onclick="hideSection('highlight')" id = "highlightHide">
+                        <img src="img/down.png" onclick="showSection('highlight')" id = "highlightShow">        
+                        <div id = "highlightContent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id = rightSection>
+                <div id = eventTitle>
+                </div>
+                <div id = eventDescription>
+                </div>
+                <div id = venueTitle>
+                </div>
+                <div id = map>
+                </div>
+                <script>
+
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiXMV30JFKVgF4Stc2RwpsZfQB23kKSH0&callback=initMap"async defer></script>
+            </div>
+        </main>
+        <footer>
+            <div id = "disclaimer">
+                <p>TicketBook is not a real company nor are 
+                    the events or venues. The tickets bought 
+                    are not real either.</p>
+            </div>
+            <div id ="socialMedia">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </footer>
+    </body>
+    <script src="script/event.js"></script>
+    <script src="script/highlight.js"></script>
+    <script src="script/search.js"></script>
+    <script src="script/login.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+</html>

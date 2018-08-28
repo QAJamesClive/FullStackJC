@@ -10,20 +10,40 @@
 }
 #searchResults{
     margin-top: 10%;
+    margin-bottom: 10%;
     width:80%;
     margin-left:auto;
     margin-right:auto;
     text-align: center;
 }
-#searchResult{
+.searchResult{
     margin-top: 5%;
     width:100%;
     display: block;
     text-align:left;
+    cursor:pointer;
+    border: none;
+    padding:6px;
+    border-radius: 7px;
+}
+.selectedResult{
+	background-color: grey;
 }
 #searchOptions{
     margin-left:auto;
     margin-right:auto;
     margin-top: 10%;
     width:80%;
+}
+.eventSuggestions{
+	display:none;
+}
+.event{
+	width:23%;
+	display:inline-block;
+	background-color:#ddd;
+	height:20%;
+	padding:6px;
+    border-radius: 7px;
+    margin:2.5%;
 }

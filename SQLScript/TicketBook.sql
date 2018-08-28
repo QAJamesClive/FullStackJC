@@ -1,8 +1,3 @@
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
-create user if not exists 'user'@'%' Identified by 'password';
-GRANT insert, update on *.* to 'user'@'%' identified by 'password';
-FLUSH PRIVILEGES;
 drop database if exists db_ticketbook;
 create database if not exists db_ticketBook;
 use db_ticketBook;
@@ -11,8 +6,8 @@ create table if not exists tbl_venue(
 	venueIDPK int not null auto_increment primary key,
     venueName varchar(30),
     houseNumber varchar(7),
-    addressLine1 varchar(30) not null,
-	addressLine2 varchar(30)not null,
+    longitude float  not null,
+	latitude float  not null,
 	city varchar(30) not null,
 	postcode varchar(8) not null,
     capacity int not null
@@ -35,27 +30,19 @@ create table if not exists tbl_band(
 );
 /*drop table tbl_person;*/
 create table if not exists tbl_person(
-	personIDPK int not null auto_increment primary key,
 	personFirstName varchar(15),
     personLastName varchar(15),
-    personDateOfBirth date not null,
+    personDateOfBirth date,
     personAdmin boolean not null,
-    personUsername char(16) not null,
+    personUsernamePK char(16) not null primary key,
     personPassword char(16) not null
-);
-create table if not exists tbl_bandMember(
-    bandMemberIDPK int not null auto_increment primary key,
-    bandMemberFirstName varchar(15),
-    bandMemberLastName varchar(15),
-	bandIDFK int,
-	foreign key(bandIDFK)references tbl_band(bandIDPK)
 );
 /*drop table tbl_ordert;*/
 create table if not exists tbl_order(
 	orderIDPK int not null auto_increment primary key,
-    personIDFK int not null,
+    personUsernameFK char(16) not null,
     datePurchased date not null,
-    foreign key(personIDFK)references tbl_person(personIDPK)
+    foreign key(personUsernameFK)references tbl_person(personUsernamePK)
 );
 /*drop table tbl_orderItem;*/
 create table if not exists tbl_orderItem(
@@ -68,16 +55,14 @@ create table if not exists tbl_orderItem(
 /*drop table tbl_wishlist;*/
 create table if not exists tbl_wishlist(
 	wishListIDPK int not null auto_increment primary key,
-	personIDFK int,
+	personUsernameFK char(16),
     eventIDFK int,
     venueIDFK int,
     bandIDFK int,
-    bandMemberIDFK int,
 	foreign key(venueIDFK)references tbl_venue(venueIDPK),
 	foreign key(bandIDFK)references tbl_band(bandIDPK),
 	foreign key(eventIDFK)references tbl_event(eventIDPK),
-	foreign key(personIDFK)references tbl_person(personIDPK),
-    foreign key(bandMemberIDFK)references tbl_bandMember(bandMemberIDPK)
+	foreign key(personUsernameFK)references tbl_person(personUsernamePK)
 );
 /*drop table tbl_eventlist;*/
 create table if not exists tbl_eventlist(
@@ -87,32 +72,36 @@ create table if not exists tbl_eventlist(
 	foreign key(eventIDFK)references tbl_event(eventIDPK),
     primary key (bandIDFK, eventIDFK)
 );
-/*drop table tbl_musicians;*/
-create table if not exists tbl_musicians(
-	bandIDFK int,
-    personIDFK int,
-    foreign key(bandIDFK)references tbl_band(bandIDPK),
-	foreign key(personIDFK)references tbl_person(personIDPK),
-    primary key (bandIDFK, personIDFK)
-);
 
 
-Insert into tbl_band(bandName, bandDescription) values("A good band name","A good band description");
-Insert into tbl_band(bandName, bandDescription) values("A band name","A band description");
-Insert into tbl_band(bandName, bandDescription) values("A good bandito name","A good bandito description");
+Insert into tbl_band(bandName, bandDescription) values("Linkin Park","A good band description");
+Insert into tbl_band(bandName, bandDescription) values("Blue","Not a green band");
+Insert into tbl_band(bandName, bandDescription) values("Funky Stuff","A good bandito description");
 Insert into tbl_band(bandName, bandDescription) values("The killers","A goodish band");
 
 
-Insert into tbl_Venue(venueName,addressLine1,addressLine2,city,postcode,capacity) values("club1","street","town","city","WS14 NE",2);
-Insert into tbl_Venue(venueName,addressLine1,addressLine2,city,postcode,capacity) values("club2","street","town","city","WS14 NE",5);
-Insert into tbl_Venue(venueName,addressLine1,addressLine2,city,postcode,capacity) values("club3","street","town","city","WS14 NE",1);
-Insert into tbl_Venue(venueName,addressLine1,addressLine2,city,postcode,capacity) values("club4","street","town","city","WS14 NE",1);
+Insert into tbl_Venue(venueName,longitude,latitude,city,postcode,capacity) values("The tops casino",150.644,-34.397,"city","WS14 NE",2);
+Insert into tbl_Venue(venueName,longitude,latitude,city,postcode,capacity) values("Scales",-34.397,150.644,"city","WS14 NE",5);
 
 
-Insert into tbl_event(eventName, eventDescription, eventStartDate, eventPrice, venueIDFK) values("Dirty mondays","A goodish band","2018-08-22 20:30:00",3000,1);
-Insert into tbl_event(eventName, eventDescription, eventStartDate,eventPrice, venueIDFK) values("Potato party","A goodish band","2018-08-22 20:30:00",4000,1);
-Insert into tbl_event(eventName, eventDescription, eventStartDate,eventPrice, venueIDFK) values("Sugar ray dance","A goodish band","2018-08-22 20:30:00",2000,2);
-Insert into tbl_event(eventName, eventDescription, eventStartDate,eventPrice, venueIDFK) values("Fleebus","A goodish band","2018-08-22 20:30:00",1000,2);
 
-Insert into tbl_person(personFirstName,personLastName,personDateOfBirth,personAdmin,personUserName,personPassword) values("First","Last",07/05/1994,true,"Username","password");
-Insert into tbl_person(personFirstName,personLastName,personDateOfBirth,personAdmin,personUserName,personPassword) values("James","Clive",07/05/1994,true,"JClive94","password");
+Insert into tbl_event(eventName, eventDescription, eventStartDate, eventPrice, venueIDFK) values("Dirty mondays","Emo-punk","2018-08-22 20:30:00",3000,1);
+Insert into tbl_event(eventName, eventDescription, eventStartDate,eventPrice, venueIDFK) values("Potato party","Just playing potatoes","2018-08-22 20:30:00",4000,1);
+Insert into tbl_event(eventName, eventDescription, eventStartDate,eventPrice, venueIDFK) values("Sugar ray dance","Super sweet, super fun!","2018-08-22 20:30:00",2000,2);
+Insert into tbl_event(eventName, eventDescription, eventStartDate,eventPrice, venueIDFK) values("Fleebus","Alt-Rock'nd'Roll","2018-08-22 20:30:00",1000,2);
+
+Insert into tbl_person(personFirstName,personLastName,personAdmin,personUsernamePK,personPassword) values("First","Last",true,"Username","password");
+Insert into tbl_person(personFirstName,personLastName,personAdmin,personUsernamePK,personPassword) values("James","Clive",true,"JClive94","password");
+
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(1,1);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(1,2);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(1,3);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(2,4);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(2,2);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(2,3);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(3,1);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(3,2);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(3,3);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(4,4);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(4,2);
+Insert into tbl_eventlist(bandIDFK,eventIDFK) Values(4,3);

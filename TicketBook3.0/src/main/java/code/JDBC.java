@@ -86,7 +86,10 @@ public final class JDBC {
 		try {
 			stmt.executeUpdate(sql);
 		} catch (SQLException e) {
+			System.out.println(e);
 			System.out.println("Failed database row insert");
+			
+			
 		}
 	}
 	
@@ -113,7 +116,7 @@ public final class JDBC {
 		try {
 			rs = stmt.executeQuery(sql);
 		} catch (SQLException e) {
-			System.out.println("Failed database read");
+			System.out.println("Failed database read "+ e.getMessage());
 		}
 		ResultSetMetaData rsmd = null;
 		try {

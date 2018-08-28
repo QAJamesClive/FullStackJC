@@ -25,4 +25,37 @@
     width:5%;
     display: none;
 }
+#logout{
+	display: none;
+}
+
+#logoutbtn,#loginbtn,#registerbtn,#submitbtn,#cancelAddUserbtn{
+	background-color: black;
+    color: white;
+    padding: 17px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    display:inline-block;
+    width: auto;
+}
+
+#register{
+	display:none;
+}
+.inputCredentials, .credentials{
+	display:block;
+	margin: 5% auto 0 auto;
+	background-color: grey;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding:6px;
+    border-radius: 7px;
+    width:25%;
+}
+
+#map {
+  height: 50%;
+}
 

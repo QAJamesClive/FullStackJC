@@ -19,24 +19,42 @@
                     </div>
                 </div>
                 <input type="text" id="searchTerm" placeholder="Search">
-                <button onclick="location.href='/results.html'"id="searchBtn" class="fa fa-search"></button>
+                <button onclick="search('results')"id="searchBtn" class="fa fa-search"></button>
             </div>
         </header>
         <main>
             <div id = leftSection>
                 <div id = "Section">
-                    <div id="profile">
-                        <h1>Sign-in</h1>
-                        <img src="img/up.png" onclick="hideSection('user')" id = "userHide">
-                        <img src="img/down.png" onclick="showSection('user')" id = "userShow">  
-                        <div id ="userContent">
-                            <div id = "Item">
-                            <h2>User Content</h2>
-                            <img src="img/gig.jpeg">
-                        </div>
-                        </div>      
-                    </div>
-                </div>
+	            <div id ="userSection">
+	                <div id="profile">
+	                    <h1>Sign-in</h1>
+	                    <img src="img/up.png" onclick="hideSection('user')" id = "userHide">
+	                    <img src="img/down.png" onclick="showSection('user')" id = "userShow">  
+	                    <div id ="userContent">
+	                        <div id ="login">
+	                            <input type="text" class ="credentials" id="loginUsername" name="loginUsername" placeholder="Username">
+	                            <input type="text" class ="credentials" id="loginPassword" name="loginPassword" placeholder="Password">
+	                            <button class ="credentials" onclick="login()" id="loginBtn"><i class="fa fa-sign-in"></i></button>
+	                            <button class ="credentials" onclick="displayRegister()" id="registerbtn"><i class="fa fa-user-plus"></i></button>
+	                        </div>  
+                     		<div id ="register">
+		            			<input type="text" class ="inputCredentials" id="firstNameInput" name="firstNameInput" placeholder="First name">
+			                    <input type="text" class ="inputCredentials" id="lastNameInput" name="lastNameInput" placeholder="Last name">
+			                    <input type="text" class ="inputCredentials" id="usernameInput" name="usernameInput" placeholder="Username">
+		                    	<input type="text" class ="inputCredentials" id="passwordInput" name="passwordInput" placeholder="Password">
+		                    	<button class ="inputCredentials" onclick="addUser()" id="submitbtn"><i class="fa fa-user-plus"></i></button>
+		                    	<button class ="inputCredentials" onclick="cancelAddUser()" id="cancelAddUserbtn"><i class="fa fa-times"></i></button>
+		                    	<div id ="errorMessage">
+		                    	</div>
+		            		</div>    
+	                    </div>     
+	                </div>
+	            </div>
+            	<div id = "logout">
+            		<div  id = "usernameText"></div>
+            		 <button onclick="logout()" id ="logoutbtn" class="fa fa-sign-out"></button>
+            	</div>
+            </div>
                 <div id = "Section">
                     <div id =highlights>
                         <h1>Highlights</h1>
@@ -48,9 +66,6 @@
                 </div>
             </div>
             <div id = rightSection>
-                <div id = "searchOptions">
-                    <h1>This is the filter search results section</h1>
-                    </div>
                 <div id = "searchResults">
                     
                 </div>
@@ -76,4 +91,6 @@
     <script src="script/highlight.js"></script>
     <script src="script/search.js"></script>
     <script src="script/resultsPage.js"></script>
+    <script src="script/login.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
 </html>
