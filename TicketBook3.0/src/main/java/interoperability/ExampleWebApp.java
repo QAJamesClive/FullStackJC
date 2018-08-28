@@ -297,33 +297,6 @@ public class ExampleWebApp {
 		return "False";
 
 	}
-	@POST
-	@Produces("Application/text")
-	@Path("/eventPage")
-	public String eventPage(Event e) {
-				
-		JSONArray tempJson;
 		
-		JDBC JavaDataBaseConnection = new JDBC("jdbc:mysql://localhost/db_ticketbook", "root", "password");
-		JavaDataBaseConnection.Connect();
-		
-		tempJson = JavaDataBaseConnection.Read("tbl_event", "eventIDPK, eventName,eventDescription");
-		
-		JavaDataBaseConnection.Disconnect();
-		for(Object user : tempJson) {
-			JSONObject userJson = new JSONObject();
-			userJson = (JSONObject) user;
-			if(u.getUsername().equals(userJson.getString("personUsername"))) {
-				if(u.getPassword().equals(userJson.get("personPassword"))) {
-					return "True";
-					
-				}
-			}
-			
-		}
-		return "False";
-		
-
-}
 
 }

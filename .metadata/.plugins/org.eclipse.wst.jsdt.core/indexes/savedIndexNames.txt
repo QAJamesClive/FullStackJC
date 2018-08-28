@@ -1,7 +1,2 @@
-INDEX VERSION 1.4+C:\Users\James\Desktop\FullStackJC\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+INDEX VERSION 1.4+C:\Users\Admin\Desktop\FullStackJC\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 2832357182.index
-3233998136.index
-3511197897.index
-3961993662.index
-1330477049.index
-126627771.index

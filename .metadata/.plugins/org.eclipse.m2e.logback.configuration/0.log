@@ -5372,3 +5372,40 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2018-08-23 16:30:17,434 [Worker-97: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-08-23 16:30:17,435 [Worker-97: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-08-23 16:30:17,435 [Worker-97: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-28 09:43:24,337 [Worker-4: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-08-28 09:44:18,236 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.qa:TicketBook3.0:0.0.1-SNAPSHOT @ C:\Users\Admin\Desktop\FullStackJC\TicketBook3.0\pom.xml.
+2018-08-28 09:44:19,634 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:44:19,634 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-08-28 09:44:19,650 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:44:19,650 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Desktop\FullStackJC\TicketBook3.0\src\test\resources
+2018-08-28 09:44:19,650 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of TicketBook3.0
+2018-08-28 09:44:19,650 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for TicketBook3.0
+2018-08-28 09:44:19,650 [Worker-6: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2018-08-28 09:44:19,666 [Worker-6: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2018-08-28 09:44:19,697 [Worker-6: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2018-08-28 09:44:19,759 [Worker-6: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2018-08-28 09:44:19,775 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:44:25,963 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:44:25,963 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-28 09:44:25,963 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:44:25,963 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Desktop\FullStackJC\TicketBook3.0\src\test\resources
+2018-08-28 09:48:14,332 [Worker-4: Launching Executing install in C__Users_Admin_Desktop_FullStackJC_TicketBook3.0] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Admin\Desktop\FullStackJC\TicketBook3.0
+2018-08-28 09:48:14,332 [Worker-4: Launching Executing install in C__Users_Admin_Desktop_FullStackJC_TicketBook3.0] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Parq-jbossas-remote -B install
+2018-08-28 09:48:19,998 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:48:19,998 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-08-28 09:48:19,998 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:48:19,998 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Desktop\FullStackJC\TicketBook3.0\src\test\resources
+2018-08-28 09:49:15,194 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:49:15,194 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-28 09:49:15,194 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:49:15,194 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Desktop\FullStackJC\TicketBook3.0\src\test\resources
+2018-08-28 09:49:18,710 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:49:18,710 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-28 09:49:18,710 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:49:18,710 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Desktop\FullStackJC\TicketBook3.0\src\test\resources
+2018-08-28 09:49:25,195 [Worker-21: Launching Executing install in C__Users_Admin_Desktop_FullStackJC_TicketBook3.0] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Admin\Desktop\FullStackJC\TicketBook3.0
+2018-08-28 09:49:25,195 [Worker-21: Launching Executing install in C__Users_Admin_Desktop_FullStackJC_TicketBook3.0] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Parq-jbossas-remote -B install
+2018-08-28 09:49:29,521 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:49:29,521 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-08-28 09:49:29,521 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-28 09:49:29,521 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Desktop\FullStackJC\TicketBook3.0\src\test\resources
